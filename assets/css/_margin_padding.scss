@@ -1,0 +1,105 @@
+/*
+* Breakpoints
+*/
+$breakpoints: ("DEFAULT");
+
+/*
+* Generating classes
+*/
+$margin-padding-unit: px;
+$margin-padding-size: 10;
+$margin-padding-count: 12;
+$margin-padding-breakpoints: ('DEFAULT');
+
+// Children
+@mixin renderMarginPaddingChildren($breakpoint, $property, $key) {
+  $isDefault: $breakpoint == "DEFAULT";
+  @for $i from 0 through $margin-padding-count {
+    @if ($isDefault) {
+      .#{$key}-children-#{$i} {
+        > * {
+          #{$property}: #{$i * $margin-padding-size + $margin-padding-unit};
+          &:last-child {
+            #{$property}: 0;
+          }
+        }
+      }
+    } @else {
+      .#{$key}-children-#{$i}-#{$breakpoint} {
+        > * {
+          #{$property}: #{$i * $margin-padding-size + $margin-padding-unit};
+          &:last-child {
+            #{$property}: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin allTypesChildren($breakpoint) {
+  @include renderMarginPaddingChildren($breakpoint, "margin", "m");
+  @include renderMarginPaddingChildren($breakpoint, "margin-top", "mt");
+  @include renderMarginPaddingChildren($breakpoint, "margin-right", "mr");
+  @include renderMarginPaddingChildren($breakpoint, "margin-bottom", "mb");
+  @include renderMarginPaddingChildren($breakpoint, "margin-left", "ml");
+
+  @include renderMarginPaddingChildren($breakpoint, "padding", "p");
+  @include renderMarginPaddingChildren($breakpoint, "padding-top", "pt");
+  @include renderMarginPaddingChildren($breakpoint, "padding-right", "pr");
+  @include renderMarginPaddingChildren($breakpoint, "padding-bottom", "pb");
+  @include renderMarginPaddingChildren($breakpoint, "padding-left", "pl");
+}
+
+@each $breakpoint in $margin-padding-breakpoints {
+  $isDefault: $breakpoint == "DEFAULT";
+  @if ($isDefault) { @include allTypesChildren($breakpoint) }
+  @else {
+    @media (max-width: #{$breakpoint + "px"}) {
+      @include allTypesChildren($breakpoint);
+    }
+  }
+};
+
+// Normal
+@mixin renderMarginPaddingProperties($breakpoint, $property, $key) {
+  $isDefault: $breakpoint == "DEFAULT";
+  @for $i from 0 through $margin-padding-count {
+    @if ($isDefault) {
+      .#{$key}-#{$i} { #{$property}: #{$i * $margin-padding-size + $margin-padding-unit} }
+    } @else {
+      .#{$key}-#{$i}-#{$breakpoint} {
+        #{$property}: #{$i * $margin-padding-size + $margin-padding-unit}
+      }
+    }
+  }
+}
+
+@mixin allTypes($breakpoint) {
+  @include renderMarginPaddingProperties($breakpoint, "margin", "m");
+  @include renderMarginPaddingProperties($breakpoint, "margin-top", "mt");
+  @include renderMarginPaddingProperties($breakpoint, "margin-right", "mr");
+  @include renderMarginPaddingProperties($breakpoint, "margin-bottom", "mb");
+  @include renderMarginPaddingProperties($breakpoint, "margin-left", "ml");
+
+  @include renderMarginPaddingProperties($breakpoint, "padding", "p");
+  @include renderMarginPaddingProperties($breakpoint, "padding-top", "pt");
+  @include renderMarginPaddingProperties($breakpoint, "padding-right", "pr");
+  @include renderMarginPaddingProperties($breakpoint, "padding-bottom", "pb");
+  @include renderMarginPaddingProperties($breakpoint, "padding-left", "pl");
+}
+
+@each $breakpoint in $margin-padding-breakpoints {
+  $isDefault: $breakpoint == "DEFAULT";
+  @if ($isDefault) { @include allTypes($breakpoint) }
+  @else {
+    @media (max-width: #{$breakpoint + "px"}) {
+      @include allTypes($breakpoint);
+    }
+  }
+};
+
+.mb-children-small > * {
+  margin-bottom: 8px;
+  &:last-child { margin-bottom: 0; }
+}

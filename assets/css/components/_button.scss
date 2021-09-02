@@ -1,0 +1,40 @@
+.button {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  text-transform: uppercase;
+  padding: 16px 55px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .4s ease;
+
+  &--orange {
+    background-color: $orange;
+    color: $yellow;
+    &:hover {
+      background-color: darken($orange, 5);
+    }
+  }
+
+  &--light-green {
+    background-color: $light-green;
+    color: $dark-green;
+    &:hover {
+      background-color: darken($light-green, 5);
+    }
+  }
+
+  &--light-red {
+    background-color: $light-red;
+    color: $red;
+    &:hover {
+      background-color: darken($light-red, 5);
+    }
+  }
+
+  &--big-button {
+    min-width: 320px;
+    min-height: 70px;
+  }
+}

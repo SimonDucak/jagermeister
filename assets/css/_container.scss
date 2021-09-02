@@ -1,0 +1,21 @@
+@mixin container() {
+  width: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container-default {
+  max-width: 940px;
+  @include container();
+}
+
+.container-1060 {
+  max-width: 1060px;
+  @include container();
+}
+
+.container-fluid {
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+.background {
+  z-index: -1;
+  @include fluid-xy();
+  background-image: url("../img/BG.png");
+  @include default-bg();
+  position: fixed;
+  &__ice-texture {
+    @include fluid-xy();
+    background-image: url("../img/ICE Texture 1.png");
+    @include default-bg();
+  }
+  &__dust-scratch {
+    @include fluid-xy();
+    background-image: url("../img/DUST SCRATCH 1.png");
+    @include default-bg();
+  }
+}

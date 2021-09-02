@@ -1,0 +1,80 @@
+#coins-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#coins-2 {
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+}
+#deer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 960px) {
+  #coins-1, #coins-2, #deer {
+    display: none;
+  }
+}
+
+#coins-5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+#coins-10 {
+  position: absolute;
+  right: 0;
+  top: 150px;
+  display: none;
+}
+
+#coins-12 {
+  position: absolute;
+  left: 0;
+  top: 250px;
+  display: none;
+}
+
+#coins-11 {
+  position: absolute;
+  right: 0;
+  top: 800px;
+  display: none;
+}
+
+#coins-8 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
+#coins-7 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+#deer-small {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+
+@media (max-width: 960px) {
+  #coins-5 { display: block; }
+  #coins-10 { display: block; }
+  #coins-12 { display: block; }
+  #coins-11 { display: block; }
+  #coins-8 { display: block; }
+  #coins-7 { display: block; }
+  #deer-small { display: block; }
+}

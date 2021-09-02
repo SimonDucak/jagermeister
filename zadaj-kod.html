@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jagermeister</title>
+    <link rel="stylesheet" href="assets/css/application.css">
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="background__ice-texture"></div>
+        <div class="background__dust-scratch"></div>
+    </div>
+    <img id="coins-5" src="assets/img/Coins%205.png" alt="coins 5">
+    <nav class="navigation">
+        <div class="navigation__content">
+            <a href="index.html">
+                <img src="assets/img/logo%20Jagermeister.png" alt="logo jagermeister">
+            </a>
+            <ul type="none">
+                <li><a href="index.html"><strong>Domov</strong></a></li>
+                <li><a href="zadaj-kod.html"><strong>Zadaj kód</strong></a></li>
+                <li><a href="vyhercovia.html"><strong>Výhercovia</strong></a></li>
+                <li><a href="caste-otazky.html"><strong>Časté otázky</strong></a></li>
+            </ul>
+            <div class="navigation__mobile-navigation">
+                <div class="navigation__mobile-navigation__bg">
+                    <div></div>
+                </div>
+                <div class="navigation__hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul type="none">
+                    <li><a href="index.html"><strong>Domov</strong></a></li>
+                    <li class="active"><a href="zadaj-kod.html"><strong>Zadaj kód</strong></a></li>
+                    <li><a href="vyhercovia.html"><strong>Výhercovia</strong></a></li>
+                    <li><a href="caste-otazky.html"><strong>Časté otázky</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container-1060 mb-4">
+        <h3 class="text-big mb-3">SEM ZADAJTE KÓD</h3>
+        <p class="max-700">
+            Do vrchného poľa vpíšte
+            <span class="text-orange">8- alebo 9-miestny kód z etikety fľaše.</span> <br>
+            V prípade, že máte kódov viac, kliknite na tlačidlo Pridať ďalší kód.
+        </p>
+    </section>
+    <section class="container-1060 mb-children-2 mb-5">
+        <div class="code-input">
+            <input type="text" placeholder="XXXXXXXXX" autocomplete="off" maxLength="9">
+            <div class="line"></div>
+        </div>
+        <div class="code-input">
+            <input type="text" placeholder="XXXXXXXXX" autocomplete="off" maxLength="9">
+            <div class="line"></div>
+        </div>
+        <div class="container-fluid f-center mb-6 code-buttons">
+            <button class="button button--light-green button--big-button mr-2">+ PRIDAŤ ĎALŠÍ KÓD</button>
+            <button class="button button--light-red button--big-button">- ODOBRAŤ ĎALŠÍ KÓD</button>
+        </div>
+        <div class="container-fluid code-inputs-group">
+             <div class="container-fluid i4 mb-2">
+                 <input type="text" name="name" placeholder="Krstné meno*">
+                 <input type="text" name="surname" placeholder="Priezvisko*">
+                 <input type="email" name="email" placeholder="E-mail*">
+                 <input type="tel" name="tel" placeholder="Telefón*">
+             </div>
+            <div class="container-fluid bill-code">
+                <div class="input-with-tooltip">
+                    <input type="text" name="code" placeholder="Kód z účtenky*">
+                    <div class="tooltip">
+                        <img src="assets/img/tooltip.svg" alt="tooltip">
+                        <div class="tooltip__content">
+                            <img src="assets/img/image%202.png" alt="tip">
+                        </div>
+                    </div>
+                </div>
+                <button id="send-code" class="button--orange button">ODOSLAŤ</button>
+             </div>
+        </div>
+    </section>
+    <section class="container-1060 pb-10 agreements mb-children-2">
+        <label class="agreement" for="agreement">
+            <input type="checkbox" id="agreement">
+            <span class="text-orange">*</span>
+            Zaškrtnutím súhlasíte so zapojením sa do súťaže „Jeleň, otras sa“ vyhlasovateľa Mast-Jagermeister SK, s. r. o., a usporiadateľa SOCIALISTS, s. r. o.,
+            a s <a class="text-orange" href="#"><u>úplnými pravidlami</u></a>, s ktorými ste sa oboznámili.
+        </label>
+
+        <label class="agreement" for="personal-agreement">
+            <input type="checkbox" id="personal-agreement">
+            <span class="text-orange">*</span>
+            Zaškrtnutím súhlasíte so spracúvaním svojich osobných údajov v rozsahu meno a priezvisko, e-mailová adresa, telefónne číslo, dátum narodenia
+            spoločnosťou Mast -Jagermeister SK, s. r. o., ako prevádzkovateľom a jeho sprostredkovateľom spoločnosťou SOCIALISTS, s. r. o., s cieľom organizácie,
+            vedenia, vyhodnotenia súťaže a kontaktovania vás ako výhercu v prípade výhry. Bez udelenia súhlasu nie je možné zúčastniť sa na súťaži.
+            Účasť na súťaži a udelenie súhlasu so spracúvaním osobných údajov sú dobrovoľné a súhlas môže byť kedykoľvek odvolaný,
+            a to e-mailom na e-mailovú adresu prevádzkovateľa (.........) alebo sprostredkovateľa (......). Ďalšie informácie týkajúce sa spracúvania osobných údajov
+            vrátane vašich práv sú uvedené v <a href="#" class="text-orange"><u>pravidlách.</u></a>
+        </label>
+
+        <label class="agreement" for="older-person-agreement">
+            <input type="checkbox" id="older-person-agreement">
+            <span class="text-orange">*</span>
+            Zaškrtnutím potvrdzujem, že som fyzickou osobou staršia ako 18 rokov.
+        </label>
+
+        <p>
+            <span class="text-orange">*</span>
+            Polia označené hviezdičkou sú povinné.
+        </p>
+    </section>
+
+    <div class="successful-code-send" style="display: none">
+        <div class="successful-code-send__blurry-bg"></div>
+        <div class="successful-code-send__content">
+            <div class="successful-code-send__ice-texture"></div>
+            <div class="successful-code-send__dust-scratch"></div>
+
+            <h3 class="text-orange text-big mb-3">Ďakujeme, že s nami súťažíte!</h3>
+
+            <p>
+                Váš súťažný kód sme zaradili do databázy.
+                V prípade výhry vás budeme kontaktovať.
+            </p>
+
+            <img src="assets/img/logo-big.png" alt="logo">
+
+            <div class="successful-code-send__close-button">
+                <i class="icon icon--close-icon"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/accordion.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+<script>
+    var sendCodeButton = $("#send-code");
+    var successCodeAlert = $(".successful-code-send");
+    var closeSuccessCodeAlert = $(".successful-code-send__close-button");
+    sendCodeButton.on("click", function() {
+    	successCodeAlert.show();
+    });
+    closeSuccessCodeAlert.on("click", function() {
+        successCodeAlert.hide();
+    })
+</script>
+
+</html>

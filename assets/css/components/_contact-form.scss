@@ -1,0 +1,35 @@
+.contact-form {
+  form {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    > * {
+      margin-right: 20px;
+      &:last-child { margin-right: 0 }
+    }
+    input { width: calc(40% - 10px); }
+    textarea { width: calc(60% - 10px); }
+  }
+  .button-holder {
+    width: 100%;
+    @include x-center();
+  }
+  @media (max-width: 1280px) {
+    margin-bottom: 0;
+    padding-bottom: 80px;
+  }
+  @media (max-width: 960px) {
+    form {
+      flex-direction: column;
+      input { width: 100%; margin-bottom: 20px; }
+      textarea { width: 100%; }
+    }
+    .button-holder .button {
+      width: 100%;
+    }
+    h3 span:last-child {
+      display: block;
+    }
+  }
+}

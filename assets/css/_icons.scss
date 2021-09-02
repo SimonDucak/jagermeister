@@ -1,0 +1,18 @@
+.icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-position: center center;
+
+  &--chevron-up {
+    background-image: url("../img/chevron-up.svg");
+    width: 28px;
+    height: 11px;
+  }
+
+  &--close-icon {
+    background-image: url("../img/close-icon.svg");
+    width: 24px;
+    height: 24px;
+  }
+}

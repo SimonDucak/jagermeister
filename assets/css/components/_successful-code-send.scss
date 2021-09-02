@@ -1,0 +1,78 @@
+.successful-code-send {
+  z-index: 999999999999999999999;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    width: 860px;
+    max-width: calc(100vw - 60px);
+    max-height: 55vh;
+    height: 550px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($dark-green, 0.9);
+
+    > * {
+      max-width: 600px;
+      width: 90%;
+    }
+  }
+
+  &__ice-texture {
+    @include fluid-xy();
+    @include default-bg();
+    background-image: url("../img/ICE Texture 1.png");
+    max-width: unset;
+  }
+
+  &__dust-scratch {
+    @include fluid-xy();
+    @include default-bg();
+    background-image: url("../img/DUST SCRATCH 1.png");
+    max-width: unset;
+  }
+
+  &__blurry-bg {
+    @include fluid-xy();
+    backdrop-filter: blur(6px);
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    width: 192px;
+    height: 192px;
+    @media (max-width: 960px) {
+      width: 128px;
+      height: 128px;
+    }
+  }
+
+  &__close-button {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: $orange;
+    transition: all .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover { background-color: darken($orange, 5); }
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,38 @@
+.headline {
+  width: 100%;
+  @include x-center();
+  margin-bottom: 60px;
+  h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+  }
+  &__left-line, &__right-line {
+    height: 40px;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    background: $orange;
+  }
+  &__left-line {
+    left: 0;
+    &--h2 {
+      transform: translateY(-50% + #{$h2-font-size / 2});
+    }
+  }
+  &__right-line {
+    width: 80%;
+    right: 0;
+  }
+  @media (max-width: 768px) {
+    width: fit-content;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    padding: 0 30px;
+    h1,h2,h3,h4,h5,h6 {
+      text-align: left;
+    }
+    &__left-line, &__right-line {
+      width: 75%;
+      height: 15px;
+    }
+  }
+}
