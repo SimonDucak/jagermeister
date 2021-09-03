@@ -1,5 +1,18 @@
+@font-face {
+  font-family: Meister Font;
+  src: url("../Meister Font/Meister-Regular TTF.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Meister Font;
+  src: url("../Meister Font/Meister-Bold TTF.ttf");
+  font-weight: 700;
+}
+
 body {
-  font-weight: normal;
+  font-family: "Meister Font", sans-serif;
+  font-weight: 400;
   font-size: 22px;
   line-height: 29px;
 

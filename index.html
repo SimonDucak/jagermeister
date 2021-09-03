@@ -11,13 +11,67 @@
             src="https://code.jquery.com/jquery-2.2.4.min.js"
             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
             crossorigin="anonymous"></script>
+    <style>
+        #home-coins-19 { position: absolute; top: 0; left: 10%; }
+        #home-coins-18 { position: absolute; top: 0; left: 0; }
+        #home-coins-17 { position: absolute; top: 0; left: 0; }
+        #home-coins-16 { position: absolute; top: 5%; right: 0; }
+        #home-coins-15 { position: absolute; top: 20%; right: 0; }
+        #home-coins-20 { position: absolute; top: 20%; left: 0; }
+        #home-coins-21 { position: absolute; top: 40%; left: 0; }
+        #home-coins-22 { position: absolute; bottom: 10%; left: 0; }
+        #home-coins-23 { position: absolute; bottom: 0; left: 0; }
+        #home-bottle { position: absolute; top: 0; left: 0; }
+        #home-deer { position: absolute; bottom: 10%; right: 0; width: 50%; height: auto }
+        @media (max-width: 1300px) { #home-deer { bottom: 15% } }
+        @media (max-width: 1100px) {
+            #home-bottle, #home-coins-19, #home-coins-18, #home-coins-17,
+            #home-coins-16, #home-coins-15, #home-coins-20, #home-coins-21,
+            #home-coins-22, #home-coins-23, #home-deer { display: none; }
+        }
+        .mobile-image { display: none; position: absolute }
+        @media (max-width: 1100px) { .mobile-image { display: block; } }
+        #mobile-bottle { top: 0; left: 0; }
+        #mobile-coins-5 { top: 0; right: 0; }
+        #mobile-coins-6 { top: 0; left: 0; }
+        #mobile-coins-13 { top: 5%; right: 0; }
+        #mobile-coins-8 { top: 20%; right: 0; }
+        #mobile-coins-9 { top: 40%; right: 0; }
+        #mobile-coins-10 { top: 45%; right: 0; }
+        #mobile-deer { top: 55%; right: 0; width: 50%; height: auto }
+        @media (max-width: 900px) { #mobile-deer { top: 60% } }
+        @media (max-width: 768px) { #mobile-deer { top: 53% } }
+        @media (max-width: 520px) { #mobile-deer { top: 55% } }
+        @media (max-width: 450px) { #mobile-deer { top: 58% } }
+        @media (max-width: 400px) { #mobile-deer { top: 60% } }
+    </style>
 </head>
 <body>
     <div class="background">
-        <div class="background__ice-texture"></div>
-        <div class="background__dust-scratch"></div>
+        <div class="background__ice-texture" style="background-image: url('assets/img/home/ICE Texture 2.png')"></div>
+        <div class="background__dust-scratch" style="background-image: url('assets/img/home/DUST SCRATCH 2.png')"></div>
     </div>
-    <img id="coins-5" src="assets/img/Coins%205.png" alt="coins 5">
+    <!-- Images -->
+    <img id="home-coins-19" src="assets/img/home/Coins%2019.png" alt="coins 19">
+    <img id="home-coins-18" src="assets/img/home/Coins%2018.png" alt="coins 18">
+    <img id="home-coins-17" src="assets/img/home/Coins%2017.png" alt="coins 17">
+    <img id="home-coins-16" src="assets/img/home/Coins%2016.png" alt="coins 16">
+    <img id="home-coins-15" src="assets/img/home/Coins%2015.png" alt="coins 15">
+    <img id="home-coins-20" src="assets/img/home/Coins%2020.png" alt="coins 20">
+    <img id="home-coins-21" src="assets/img/home/Coins%2021.png" alt="coins 21">
+    <img id="home-coins-22" src="assets/img/home/Coins%2022.png" alt="coins 22">
+    <img id="home-coins-23" src="assets/img/home/Coins%2023.png" alt="coins 23">
+    <img id="home-bottle" src="assets/img/home/Flasa%20Jagermeister%201.png" alt="bottle">
+    <img id="home-deer" src="assets/img/home/Jelen-SK%201.png" alt="deer">
+    <!-- Mobile images -->
+    <img class="mobile-image" id="mobile-coins-5" src="assets/img/home/respo/Coins%205.png" alt="coins 5">
+    <img class="mobile-image" id="mobile-coins-6" src="assets/img/home/respo/Coins%206.png" alt="coins 6">
+    <img class="mobile-image" id="mobile-coins-13" src="assets/img/home/respo/Coins%2013.png" alt="coins 13">
+    <img class="mobile-image" id="mobile-coins-8" src="assets/img/home/respo/Coins%208.png" alt="coins 8">
+    <img class="mobile-image" id="mobile-coins-9" src="assets/img/home/respo/Coins%209.png" alt="coins 9">
+    <img class="mobile-image" id="mobile-coins-10" src="assets/img/home/respo/Coins%2010.png" alt="coins 10">
+    <img class="mobile-image" id="mobile-bottle" src="assets/img/home/respo/Flasa%20Jagermeister.png" alt="mobile bottle">
+    <img class="mobile-image" id="mobile-deer" src="assets/img/home/Jelen-SK%201.png" alt="mobile deer">
     <nav class="navigation">
         <div class="navigation__content">
             <a href="index.html">

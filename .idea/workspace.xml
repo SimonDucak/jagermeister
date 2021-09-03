@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4197e5c-5974-4d0f-9fe9-d589615817bb" name="Default Changelist" comment="" />
+    <list default="true" id="b4197e5c-5974-4d0f-9fe9-d589615817bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/Meister Font/Meister-Bold TTF.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Meister Font/Meister-Regular TTF.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Coins 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Coins 16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Coins 17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Coins 18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Coins 19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Coins 20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Coins 21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Coins 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Coins 23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Coins 24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/DUST SCRATCH 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Flasa Jagermeister 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/ICE Texture 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/Jelen-SK 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/Coins 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/Coins 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/Coins 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/Coins 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/Coins 5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/Coins 6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/Coins 8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/Coins 9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/DUST SCRATCH 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/Flasa Jagermeister.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/ICE Texture 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/New Badge 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/home/respo/jelen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/application.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/application.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +66,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JenkinsBrowserPanel">
     <treeState>
       <expand />
@@ -37,22 +76,26 @@
     </treeState>
   </component>
   <component name="ProjectId" id="1xCfXaDgk0H0k4zJrV0VKUI2myr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/home" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sducak\Desktop\jagermeister\assets\img" />
-      <recent name="C:\Users\sducak\Desktop\jagermeister" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sducak\Desktop\jagermeister\assets\css" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sducak\Desktop\jagermeister\assets\img\home" />
+      <recent name="C:\Users\sducak\Desktop\jagermeister\assets" />
+      <recent name="C:\Users\sducak\Desktop\jagermeister\assets\img" />
+      <recent name="C:\Users\sducak\Desktop\jagermeister" />
       <recent name="C:\Users\sducak\Desktop\jagermeister\assets\css" />
     </key>
   </component>
@@ -80,11 +123,25 @@
       <updated>1629864030136</updated>
       <workItem from="1629864031520" duration="33170000" />
       <workItem from="1630520403573" duration="7626000" />
-      <workItem from="1630576800585" duration="5467000" />
+      <workItem from="1630576800585" duration="6675000" />
+      <workItem from="1630662676538" duration="4370000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

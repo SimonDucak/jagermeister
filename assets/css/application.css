@@ -92,8 +92,19 @@ h1, h2, h3, h4, h5, h6, ul, p {
   background-repeat: no-repeat;
 }
 
+@font-face {
+  font-family: Meister Font;
+  src: url("../Meister Font/Meister-Regular TTF.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Meister Font;
+  src: url("../Meister Font/Meister-Bold TTF.ttf");
+  font-weight: 700;
+}
 body {
-  font-weight: normal;
+  font-family: "Meister Font", sans-serif;
+  font-weight: 400;
   font-size: 22px;
   line-height: 29px;
 }
@@ -2483,6 +2494,7 @@ textarea {
   .header {
     justify-content: flex-start;
     padding-left: 30px;
+    margin-top: 210px;
   }
 }
 @media (max-width: 768px) {
@@ -2721,7 +2733,12 @@ textarea {
 }
 @media (max-width: 768px) {
   .about-game-section {
-    margin-bottom: 100px;
+    margin-bottom: 300px;
+  }
+}
+@media (max-width: 520px) {
+  .about-game-section {
+    margin-bottom: 200px;
   }
 }
 .about-game-section::before {
