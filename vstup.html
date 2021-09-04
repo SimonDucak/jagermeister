@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jagermeister</title>
+    <link rel="stylesheet" href="assets/css/application.css">
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+</head>
+<body class="entry-view">
+    <div class="background">
+        <div class="background__ice-texture"></div>
+        <div class="background__dust-scratch"></div>
+    </div>
+    <div class="entry-view__bg"></div>
+    <img src="assets/img/logo-large.png" class="entry-view__logo">
+    <img src="assets/img/entry/logo.png" class="entry-view__logo-mobile">
+    <img id="deer" src="assets/img/entry/Jelen.png" alt="deer" class="mobile-img">
+    <img id="coins-5" src="assets/img/entry/Coins%205.png" alt="coins 5" class="mobile-img">
+    <img id="coins-6" src="assets/img/entry/Coins%206.png" alt="coins 6" class="mobile-img">
+    <div class="entry-view__form">
+        <h3 class="text-big mb-2">Zadajte svoj dátum narodenia</h3>
+
+        <p class="mb-5">
+            Vstup na webové stránky a účasť na súťaži
+            sú prístupné len osobám starším ako 18 rokov.
+        </p>
+
+        <div class="input-box" id="day-input-box">
+            <label for="day" class="input-box__label">DEŇ</label>
+            <div class="input-box__input">
+                <input id="day" type="text" placeholder="DD" name="day" maxLength="2">
+                <div class="input-box__bottom-line"></div>
+            </div>
+        </div>
+
+        <div class="input-box" id="month-input-box">
+            <label for="month" class="input-box__label">MESIAC</label>
+            <div class="input-box__input">
+                <input id="month" type="text" placeholder="MM" name="month" maxLength="2">
+                <div class="input-box__bottom-line"></div>
+            </div>
+        </div>
+
+        <div class="input-box" id="year-input-box">
+            <label for="year" class="input-box__label">ROK</label>
+            <div class="input-box__input">
+                <input id="year" type="text" placeholder="RRRR" name="year" maxLength="4">
+                <div class="input-box__bottom-line"></div>
+            </div>
+        </div>
+
+        <div class="button-holder">
+            <button class="button button--orange" style="text-transform: none">Vstúpiť</button>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/accordion.js"></script>
+<script src="assets/js/navigation.js"></script>
+
+</html>
