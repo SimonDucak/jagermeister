@@ -1,0 +1,45 @@
+.cookie {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 12px 50px;
+  background-color: rgba(29, 56, 45, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p { font-size: 12px; padding-right: 30px }
+  &__buttons {
+    flex-shrink: 0;
+    display: flex;
+    align-items: stretch;
+    .button {
+      margin-right: 10px;
+      &:last-child { margin-right: 0; }
+      flex-shrink: 0;
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 1520px) {
+    padding: 12px 30px;
+    &__buttons {
+      .button { padding: 16px 30px; }
+    }
+  }
+  @media (max-width: 1120px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__buttons {
+      width: 100%;
+      flex-direction: column;
+      .button {
+        br { display: none; }
+        width: 100%;
+        margin-bottom: 5px;
+        &:last-child { margin-bottom: 0; }
+      }
+    }
+    padding: 30px;
+    p { margin-bottom: 20px; }
+  }
+}

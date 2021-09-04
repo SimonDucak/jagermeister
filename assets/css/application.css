@@ -1908,6 +1908,67 @@ textarea {
   color: #182923;
 }
 
+.cookie {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 12px 50px;
+  background-color: rgba(29, 56, 45, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cookie p {
+  font-size: 12px;
+  padding-right: 30px;
+}
+.cookie__buttons {
+  flex-shrink: 0;
+  display: flex;
+  align-items: stretch;
+}
+.cookie__buttons .button {
+  margin-right: 10px;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+.cookie__buttons .button:last-child {
+  margin-right: 0;
+}
+@media (max-width: 1520px) {
+  .cookie {
+    padding: 12px 30px;
+  }
+  .cookie__buttons .button {
+    padding: 16px 30px;
+  }
+}
+@media (max-width: 1120px) {
+  .cookie {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .cookie__buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+  .cookie__buttons .button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .cookie__buttons .button br {
+    display: none;
+  }
+  .cookie__buttons .button:last-child {
+    margin-bottom: 0;
+  }
+  .cookie p {
+    margin-bottom: 20px;
+  }
+}
+
 .contact-form form {
   width: 100%;
   display: flex;
@@ -1987,6 +2048,13 @@ textarea {
 }
 .button--light-red:hover {
   background-color: #ac6d6d;
+}
+.button--green {
+  background-color: #5F685A;
+  color: #182923;
+}
+.button--green:hover {
+  background-color: #535a4e;
 }
 .button--big-button {
   min-width: 320px;

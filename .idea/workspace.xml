@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4197e5c-5974-4d0f-9fe9-d589615817bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/entry-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/entry/Coins 5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/entry/Coins 6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/entry/Jelen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/logo-large.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vstup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/components/_cookie.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/application.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/application.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/application.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/application.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/components/_button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,7 +97,7 @@
       <workItem from="1630520403573" duration="7626000" />
       <workItem from="1630576800585" duration="6675000" />
       <workItem from="1630662676538" duration="4484000" />
-      <workItem from="1630748316590" duration="4162000" />
+      <workItem from="1630748316590" duration="5383000" />
     </task>
     <servers />
   </component>

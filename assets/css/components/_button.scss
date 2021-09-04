@@ -33,6 +33,14 @@
     }
   }
 
+  &--green {
+    background-color: #5F685A;
+    color: $dark-green;
+    &:hover {
+      background-color: darken(#5F685A, 5);
+    }
+  }
+
   &--big-button {
     min-width: 320px;
     min-height: 70px;
